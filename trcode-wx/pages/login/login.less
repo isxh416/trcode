@@ -1,0 +1,126 @@
+.page {
+	padding-left: 35px;
+	padding-right: 35px;
+	.title {
+		color: #013973;
+		font-weight: bold;
+		text-align: center;
+		font-size: 28px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.sub-title {
+		color: #013973;
+		text-align: center;
+	}
+	.panel {
+		border-radius: 5px;
+		border: solid 1px #f0f0f0;
+		margin-top: 20px;
+		box-shadow: 0 0 6px 0px #ddd;
+		padding: 15px;
+		.row {
+			display: flex;
+			padding: 10px 0;
+			margin-bottom: 10px;
+			&:first-child {
+				border-bottom: solid 1px #f0f0f0;
+			}
+			.phone {
+				width: 30px;
+				height: 30px;
+				margin-top: -3px;
+				margin-left: -3px;
+				margin-right: 5px;
+			}
+			.tel {
+				font-size: 15px;
+			}
+			.check {
+				margin-right: 5px;
+			}
+			.remark {
+				font-size: 11px;
+				color: #999;
+				line-height: 1.6;
+			}
+		}
+		.btn {
+			background-color: #288ff4;
+			color: #fff;
+			font-size: 15px;
+			&:active {
+				background-color: #0b75de;
+			}
+		}
+		.link {
+			text-align: right;
+			color: #288ff4;
+			font-size: 13px;
+			text-decoration: underline;
+			margin-top: 15px;
+		}
+	}
+	.support {
+		color: #999;
+		font-size: 15px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 25px;
+		&::before {
+			content: "";
+			display: block;
+			width: 25%;
+			height: 0;
+			border-bottom: solid 1px #ddd;
+			margin-top: 10px;
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 25%;
+			height: 0;
+			border-bottom: solid 1px #ddd;
+			margin-top: 10px;
+		}
+	}
+	.logo-container {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+		.logo-1 {
+			display: block;
+			width: 100px;
+			height: auto;
+			flex-shrink: 0;
+		}
+		.logo-2 {
+			display: block;
+			width: 53px;
+			height: auto;
+			flex-shrink: 0;
+		}
+		.logo-3 {
+			display: block;
+			width: 60px;
+			height: auto;
+			flex-shrink: 0;
+		}
+		.logo-4 {
+			display: block;
+			width: 30px;
+			height: auto;
+			flex-shrink: 0;
+		}
+	}
+	.contact {
+		font-size: 11px;
+		color: #666;
+		margin-top: 15px;
+		text-align: center;
+		text {
+			color: #288ff4;
+			margin: 0 3px;
+		}
+	}
+}

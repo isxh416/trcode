@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.trcode.api.dao.TbUserDao">
+    <select id="login" parameterType="String" resultType="Integer">
+        SELECT id
+        FROM tb_user
+        WHERE openid = #{openId} LIMIT 1
+    </select>
+    <insert id="insert" parameterType="com.example.trcode.api.pojo.TbUser">
+        INSERT INTO tb_user
+        SET openid = #{openid},
+            name = #{name},
+            pid = #{pid},
+            address = #{address},
+            sex = #{sex},
+            tel = #{tel}
+    </insert>
+    <update id="updateTel" parameterType="hashmap">
+        UPDATE tb_user
+        SET tel = #{tel}
+        WHERE id = #{id}
+    </update>
+</mapper>

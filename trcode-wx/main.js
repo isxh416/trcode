@@ -10,7 +10,7 @@ const app = new Vue({
 });
 app.$mount();
 
-let baseUrl = "http://192.168.43.27:8080/trcode-api/";
+let baseUrl = "http://xxx.xxx.xx.xx:8080/trcode-api/";
 Vue.prototype.ajax = function(url, method, data, fun) {
 	uni.request({
 		url: baseUrl + url,
